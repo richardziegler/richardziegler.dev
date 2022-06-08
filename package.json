@@ -1,5 +1,5 @@
 {
-  "name": "windty",
+  "name": "jg-landing",
   "version": "1.0.0",
   "description": "Simple 11ty template with tailwind",
   "scripts": {
@@ -10,21 +10,6 @@
     "build:eleventy": "cross-env ELEVENTY_PRODUCTION=true eleventy",
     "build:postcss": "cross-env NODE_ENV=production postcss src/styles/*.css --dir _site",
     "clean": "rimraf _site"
-  },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/distantcam/windty.git"
-  },
-  "keywords": [
-    "eleventy",
-    "11ty",
-    "tailwind"
-  ],
-  "author": "Cam MacFarland",
-  "license": "Unlicense",
-  "homepage": "https://github.com/distantcam/windty#readme",
-  "bugs": {
-    "url": "https://github.com/distantcam/windty/issues"
   },
   "devDependencies": {
     "@11ty/eleventy": "^1.0.1",
