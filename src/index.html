@@ -2,193 +2,134 @@
 layout: default
 ---
 
+<style type="text/css">
+  body {
+    cursor: url('data:image/x-icon;base64,AAACAAEAICAAAAAAAACoEAAAFgAAACgAAAAgAAAAQAAAAAEAIAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAP8AAADgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/wBSnv8AAAD/AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAP8AAAAAAAAAAAAAAAAAAAD/AFKe/wAAAP8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD/AQEB/wAAAAAAAAAAAAAAAAAAAP8AUp7/AAAA/wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/wBSnv8AAAD/AAAAAAAAAAAAAAAAAQEB/wBSnv8AAAD/AAAAAAAAAAAAAAAAAAAAAAAAAP8AAAD/AAAA/wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD/AFKe/wAAAP8AAAAAAAAAAAAAAP8MX/D/AIT//wEBAf8AAAAAAAAAAAAAAAAAAAAAAQEB/wAAAP8AAAD/AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAP8Aacz/AAAA/wAAAAAAAAAAAAAA/wxf8P8AhP//AAAA/wAAAAAAAAAAAAAAAAAAAAABAQH/DF/w/wAAAP8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA+ABpzP8AAAD/AAAAAAAAAAAAAAD/En7j/wCE//8AAAD/AAAAAAAAAAAAAAAAAAAAAAAAAP8AhP//AAAA/wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAQH/AGnM/wAAAP8AAAAAAAAAAAAAAP8MX/D/AIT//wAAAP8AAAAAAAAAAAAAAAAAAAD/En7j/wCE//8AAAD/AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEBAf8AhP//AAAA/wAAAAAAAAAAAAAA/xJ+4/8AhP//AAAA/wAAAAAAAAAAAAAAAAAAAAAAAAD/AIT//wAAAP8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD/En7j/wCE//8AAAD/AAAAAAAAAAAAAAD/En7j/wCE//8AAACkAAAAAAAAAAAAAAAAAAAAAAAAAP8SfuP/AQEB/wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAP8SfuP/AIT//wAAAP8AAAAAAAAAAAAAAP8SfuP/AIT//wAAAP8AAAAAAAAAAAAAAAAAAAAAAAAA/xJ+4/8AAAD/AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/xJ+4/8AhP//AAAA/wAAAAAAAAAAAAAA/xJ+4/8AhP//AAAA/wAAAAAAAAAAAAAAAAAAAAAAAAD/En7j/wBSnv8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQEB/wCE//8BAQH/AAAAAAAAAAAAAAD/En7j/wCE//8AAAD/AAAAAAAAAAAAAAAAAAAAAAAAAP8SfuP/DRcL/wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAQH/AIT//wxf8P8AAAD/AAAAAAAAAAAGExT/En7j/wEBAf8AAAAAAAAAAAAAAAAAAAAAAAAA/xJ+4/8AAAD/AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAP8AhP//AAAA/wAAAAAAAAAAAAAAAAEBAf8SfuP/AIT//wAAAP8AAAAAAAAAAAAAAAAAAAD/En7j/wxf8P8AAAD/AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD/En7j/wCE//8CAgL/AAAAAAAAAAAAAAAAAAAAcRJ+4/8SfuP/AQEB/wAAAAAAAAAAAAAAAAAAAOASfuP/DF/w/wAAAP8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAP8SfuP/AIT//wMDBP8AAAAAAAAAAAAAAAASfuP/En7j/xJ+4/8OIAr/AAAAAAAAAAAAAAAAAAAA/xJ+4/8MX/D/AAAA/wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/xJ+4/8AhP//DF/w/wAAALAAAAAAAAAA/xJ+4/8SfuP/AIT//wAAAP8AAAAAAAAAAAAAAAAAAACzEn7j/wEBAf8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD/En7j/wCE//8BAAL/AAAAAAAAAAAAAAD/DF/w/xJ+4/8AhP//AAAA/wAAAAAAAAAAAAAAAAEBAf8SfuP/AAAA/wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAA/8SfuP/AIT//wAAAP8AAAAAAAAAAAAAAP8BAQH/En7j/wCE//8AAAD/AAAAAAAAAAAAAAD/En7j/wCE//8CAgL/AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD/En7j/xJ+4/8AhP//AAAA/wAAAAAAAAAAAAAA/xJ+4/8SfuP/AIT//wAAAP8AAAAAAAAAAAAAAP8SfuP/AIT//wAAAP8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAP8SfuP/En7j/wCE//8AAAD/AAAAAAAAAAAAAAD/En7j/xJ+4/8AhP//DyEJ/wAAAAAAAAAAAAAA/xJ+4/8SfuP/AAAA/wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/xJ+4/8SfuP/AIT//wAAAP8AAAAAAAAAAAAAAP8SfuP/En7j/wCE//8BAQH/AAAAAAAAAAAAAAAAAAAA/xJ+4/8BAQH/AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQEB/xJ+4/8AhP//AQEB/wAAAAAAAAAAAAAA/xJ+4/8SfuP/AIT//wEBAf8AAAAAAAAAAAAAAAAAAAD/En7j/wxf8P8AAAD/AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAQH/En7j/wCE//8AAAD/AAAAAAAAAAAAAAD/En7j/xJ+4/8AhP//AAAAlAAAAAAAAAAAAAAAAAEBAf8SfuP/AIT//wEBAf8AAAAAAAAAAAAAAAAAAAAAAAAA/wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/xJ+4/8SfuP/En7j/wAAAP8AAAAAAAAAAAEBAf8SfuP/En7j/wCE//8AAACUAAAAAAAAAAAAAAAAAQEB/xJ+4/8AhP//BgYG/wAAAAAAAAAAAAAAAAAAAAAAUp7/AAAA/wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAP8AAAD/En7j/xJ+4/8SfuP/AIT//wAAAP8AAAAAAAAA/xJ+4/8SfuP/AIT//wEBAf8AAAD/AwsL/wEBAf8SfuP/En7j/wCE//8AUp7/AAAAAAAAAAAAAAAAAAAAAAxf8P8AUp7/AAAA/wAAAAAAAAAAAAAAAAkiIv8HFBT/En7j/xJ+4/8SfuP/En7j/xJ+4/8AhP//AAAA/wAAAP8SfuP/En7j/xJ+4/8AhP//DF/w/wEBAf8SfuP/En7j/xJ+4/8AhP//DF/w/wxf8P8AAAD/AAAAAAAAAAAAAAAAEn7j/wxf8P8AUp7/AAAA/wAAAAAAAAAAAAAAAAAAAP8MX/D/DF/w/wBSnv8AUp7/AFKe/wBSnv8AUp7/AFKe/xJ+4/8SfuP/En7j/wxf8P8MX/D/AQEB/wAAAP8AAAD/AIT//wxf8P8MX/D/AAAA/wAAAAAAAAAAAAAAAAAAAAAAhP//En7j/wxf8P8AUp7/AAAA/wAAAAAAAAAAAAAAAAAAAP8AAAD/AAAA/wAAAP8AAAD/AAAA/wAAAP8BAQH/AFKe/wxf8P8MX/D/DF/w/wEBAf8AAAAAAAAAAAAAAAAAAAD/AQEB/wAAAP8AAAAAAAAAAAAAAAAAAAAAAAAAAACE//8AhP//En7j/wxf8P8AUp7/AAAA/wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/wEBAf8AAADrAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA//+f////j///+4////OP///jjx//4w8f/+MPH//jDx//4w4f/+MPH//DDx//ww8f/8MPH//jDx//4Y8f/+OHD//Dxw//w4cP/8EHH//DBx//wwYf/4MGH/+DBh//gwcf/8MHD//DBw9/gwcPPwEADxwAAAcOAAAPBwAHHwP/j/8='), auto;
+  }
+</style>
+
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-<link
-  href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap"
-  rel="stylesheet"
-/>
+<link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet" />
 <link rel="stylesheet" href="https://unpkg.com/98.css" />
 <html class="bg-[#008080] overflow-scroll">
-  <main
-    class="container mx-auto flex flex-col flex-wrap items-center p-6 pt-24 md:flex-row md:pt-48"
-  >
-    <header
-      class="flex w-full flex-col justify-center overflow-y-hidden lg:items-start xl:w-4/5"
-    >
-      <h1
-        class="my-4 text-center text-2xl font-bold leading-tight md:text-left md:text-4xl font-press-start uppercase text-white"
-      >
-        Welcome to The Unofficial Jeff Gerstmann Landing Page
-      </h1>
-      <div class="flex flex-row justify-between w-5/6">
-        <div class="window" style="width: 400px">
-          <div class="title-bar">
-            <div class="title-bar-text">Current Schedule - Pacific Time</div>
-            <div class="title-bar-controls">
-              <button aria-label="Minimize"></button>
-              <button aria-label="Maximize"></button>
-              <button aria-label="Close"></button>
-            </div>
-          </div>
-          <div class="window-body">
-            <ul
-              class="mb-6 text-center text-base leading-normal md:text-left md:text-xl text-black"
-            >
-              <li>- June 9, 11AM - Summer Game Fest</li>
-              <li>- June 12, 10AM - Xbox Bethesda Thing</li>
-              <li>- June 12, 12:30PM - PC Gaming Show</li>
-              <li>- June 13, 3PM - Capcom Showcase</li>
-              <li>- June 14, Time TBA - Our Weekly Podcast!</li>
-            </ul>
-          </div>
-        </div>
-
-        <img
-          class="max-w-1/5"
-          src="https://i.pinimg.com/originals/bb/6b/31/bb6b311cbe4e062de36f5babf0d2f695.gif"
-        />
-        <img
-          class="max-w-1/5"
-          src="https://c.tenor.com/Xz7rt0UI61sAAAAC/kirby-music.gif"
-        />
-      </div>
-
-      <h2
-        class="my-4 text-center text-2xl font-bold leading-tight md:text-left md:text-3xl font-press-start uppercase text-white"
-      >
-        Links
-      </h2>
-
-      <div class="window" style="width: 320px">
+<main class="container mx-auto flex flex-col flex-wrap items-center p-6 pt-24 md:flex-row md:pt-48">
+  <header class="flex w-full flex-col justify-center overflow-y-hidden lg:items-start xl:w-4/5">
+    <h1
+      class="my-4 text-center text-2xl font-bold leading-tight md:text-left md:text-4xl font-press-start uppercase text-white">
+      Welcome to The Unofficial Jeff Gerstmann Landing Page
+    </h1>
+    <div class="flex flex-row justify-between w-5/6">
+      <div class="window" style="width: 400px">
         <div class="title-bar">
-          <div class="title-bar-text">Still a threat</div>
+          <div class="title-bar-text">Current Schedule - Pacific Time</div>
+          <div class="title-bar-controls">
+            <button aria-label="Minimize"></button>
+            <button aria-label="Maximize"></button>
+            <button aria-label="Close"></button>
+          </div>
         </div>
         <div class="window-body">
-          <div class="grid gap-4 grid-cols-2 font-press-start">
-            <a class="mb-4" href="https://www.patreon.com/jeffgerstmann/">
-              <?xml version="1.0" standalone="no"?>
-              <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 20010904//EN" "http://www.w3.org/TR/2001/REC-SVG-20010904/DTD/svg10.dtd">
-              <svg
-                class="mb-1"
-                version="1.0"
-                xmlns="http://www.w3.org/2000/svg"
-                width="40"
-                height="40"
-                viewBox="0 0 1080.000000 1080.000000"
-                preserveAspectRatio="xMidYMid meet"
-              >
-                <g
-                  transform="translate(0.000000,1080.000000) scale(0.100000,-0.100000)"
-                  fill="#000000"
-                  stroke="none"
-                >
-                  <path
-                    d="M530 5400 l0 -4680 855 0 855 0 0 4680 0 4680 -855 0 -855 0 0 -4680z"
-                  />
-                  <path
-                    d="M6590 10074 c-424 -29 -789 -112 -1160 -264 -635 -262 -1202 -731
+          <ul class="mb-6 text-center text-base leading-normal md:text-left md:text-xl text-black">
+            <li>- June 9, 11AM - Summer Game Fest</li>
+            <li>- June 12, 10AM - Xbox Bethesda Thing</li>
+            <li>- June 12, 12:30PM - PC Gaming Show</li>
+            <li>- June 13, 3PM - Capcom Showcase</li>
+            <li>- June 14, Time TBA - Our Weekly Podcast!</li>
+          </ul>
+        </div>
+      </div>
+
+      <img class="max-w-1/5" src="https://i.pinimg.com/originals/bb/6b/31/bb6b311cbe4e062de36f5babf0d2f695.gif" />
+      <img class="max-w-1/5" src="https://c.tenor.com/Xz7rt0UI61sAAAAC/kirby-music.gif" />
+    </div>
+
+    <h2
+      class="my-4 text-center text-2xl font-bold leading-tight md:text-left md:text-3xl font-press-start uppercase text-white">
+      Links
+    </h2>
+
+    <div class="window" style="width: 320px">
+      <div class="title-bar">
+        <div class="title-bar-text">Still a threat</div>
+      </div>
+      <div class="window-body">
+        <div class="grid gap-4 grid-cols-2 font-press-start">
+          <a class="mb-4" href="https://www.patreon.com/jeffgerstmann/">
+            <?xml version="1.0" standalone="no"?>
+            <!DOCTYPE svg
+              PUBLIC "-//W3C//DTD SVG 20010904//EN" "http://www.w3.org/TR/2001/REC-SVG-20010904/DTD/svg10.dtd">
+            <svg class="mb-1" version="1.0" xmlns="http://www.w3.org/2000/svg" width="40" height="40"
+              viewBox="0 0 1080.000000 1080.000000" preserveAspectRatio="xMidYMid meet">
+              <g transform="translate(0.000000,1080.000000) scale(0.100000,-0.100000)" fill="#000000" stroke="none">
+                <path d="M530 5400 l0 -4680 855 0 855 0 0 4680 0 4680 -855 0 -855 0 0 -4680z" />
+                <path d="M6590 10074 c-424 -29 -789 -112 -1160 -264 -635 -262 -1202 -731
 -1586 -1315 -298 -454 -471 -920 -551 -1486 -25 -178 -25 -710 0 -889 95 -674
 334 -1229 756 -1759 114 -144 400 -426 546 -539 550 -427 1130 -662 1835 -743
 159 -19 557 -16 730 5 817 97 1535 445 2097 1018 193 196 329 363 448 548 292
 454 460 909 542 1465 26 172 25 725 0 905 -97 683 -364 1291 -792 1803 -127
-151 -354 374 -500 491 -509 407 -1133 666 -1780 741 -129 15 -479 26 -585 19z"
-                  />
-                </g>
-              </svg>
-              PATREON
-            </a>
-            <a href="https://www.twitch.tv/jeffgerstmann">
-              <?xml version="1.0" encoding="utf-8"?>
+151 -354 374 -500 491 -509 407 -1133 666 -1780 741 -129 15 -479 26 -585 19z" />
+              </g>
+            </svg>
+            PATREON
+          </a>
+          <a href="https://www.twitch.tv/jeffgerstmann">
+            <?xml version="1.0" encoding="utf-8"?>
 
-              <svg
-                class="mb-1"
-                version="1.1"
-                id="Layer_1"
-                xmlns="http://www.w3.org/2000/svg"
-                xmlns:xlink="http://www.w3.org/1999/xlink"
-                width="40"
-                height="40"
-                x="0px"
-                y="0px"
-                viewBox="0 0 2400 2800"
-                style="enable-background: new 0 0 2400 2800"
-                xml:space="preserve"
-              >
-                <style type="text/css">
-                  .st0 {
-                    fill: #ffffff;
-                  }
-                </style>
-                <title>Twitch Logo</title>
+            <svg class="mb-1" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
+              xmlns:xlink="http://www.w3.org/1999/xlink" width="40" height="40" x="0px" y="0px" viewBox="0 0 2400 2800"
+              style="enable-background: new 0 0 2400 2800" xml:space="preserve">
+              <style type="text/css">
+                .st0 {
+                  fill: #ffffff;
+                }
+              </style>
+              <title>Twitch Logo</title>
+              <g>
+                <polygon class="st0"
+                  points="2200,1300 1800,1700 1400,1700 1050,2050 1050,1700 600,1700 600,200 2200,200 	" />
                 <g>
-                  <polygon
-                    class="st0"
-                    points="2200,1300 1800,1700 1400,1700 1050,2050 1050,1700 600,1700 600,200 2200,200 	"
-                  />
-                  <g>
-                    <g id="Layer_1-2">
-                      <path
-                        d="M500,0L0,500v1800h600v500l500-500h400l900-900V0H500z M2200,1300l-400,400h-400l-350,350v-350H600V200h1600V1300z"
-                      />
-                      <rect x="1700" y="550" width="200" height="600" />
-                      <rect x="1150" y="550" width="200" height="600" />
-                    </g>
+                  <g id="Layer_1-2">
+                    <path
+                      d="M500,0L0,500v1800h600v500l500-500h400l900-900V0H500z M2200,1300l-400,400h-400l-350,350v-350H600V200h1600V1300z" />
+                    <rect x="1700" y="550" width="200" height="600" />
+                    <rect x="1150" y="550" width="200" height="600" />
                   </g>
                 </g>
-              </svg>
-              TWITCH
-            </a>
-            <a href="https://www.youtube.com/channel/UCR9R2ARN74dCebn1kv06UhA">
-              <?xml version="1.0" standalone="no"?>
-              <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 20010904//EN" "http://www.w3.org/TR/2001/REC-SVG-20010904/DTD/svg10.dtd">
-              <?xml version="1.0" standalone="no"?>
-              <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 20010904//EN" "http://www.w3.org/TR/2001/REC-SVG-20010904/DTD/svg10.dtd">
-              <svg
-                version="1.0"
-                xmlns="http://www.w3.org/2000/svg"
-                width="40"
-                height="40"
-                viewBox="0 0 512.000000 455.000000"
-                preserveAspectRatio="xMidYMid meet"
-              >
-                <g
-                  transform="translate(0.000000,455.000000) scale(0.100000,-0.100000)"
-                  fill="#000000"
-                  stroke="none"
-                >
-                  <path
-                    d="M1925 3974 c-824 -27 -1164 -57 -1317 -114 -129 -48 -265 -169 -325
+              </g>
+            </svg>
+            TWITCH
+          </a>
+          <a href="https://www.youtube.com/channel/UCR9R2ARN74dCebn1kv06UhA">
+            <?xml version="1.0" standalone="no"?>
+            <!DOCTYPE svg
+              PUBLIC "-//W3C//DTD SVG 20010904//EN" "http://www.w3.org/TR/2001/REC-SVG-20010904/DTD/svg10.dtd">
+            <?xml version="1.0" standalone="no"?>
+            <!DOCTYPE svg
+              PUBLIC "-//W3C//DTD SVG 20010904//EN" "http://www.w3.org/TR/2001/REC-SVG-20010904/DTD/svg10.dtd">
+            <svg version="1.0" xmlns="http://www.w3.org/2000/svg" width="40" height="40"
+              viewBox="0 0 512.000000 455.000000" preserveAspectRatio="xMidYMid meet">
+              <g transform="translate(0.000000,455.000000) scale(0.100000,-0.100000)" fill="#000000" stroke="none">
+                <path d="M1925 3974 c-824 -27 -1164 -57 -1317 -114 -129 -48 -265 -169 -325
                -290 -78 -156 -120 -451 -144 -1010 -19 -467 14 -1071 77 -1379 59 -291 227
                -465 504 -521 586 -119 3094 -119 3680 0 279 57 445 229 505 525 61 303 95
                912 76 1375 -24 559 -65 848 -143 1008 -60 122 -196 244 -326 292 -120 45
                -415 78 -902 100 -217 11 -1481 21 -1685 14z m778 -1344 c344 -195 622 -358
                619 -362 -6 -6 -1172 -671 -1239 -707 l-23 -12 0 721 c0 435 4 720 9 718 5 -1
-               291 -163 634 -358z"
-                  />
-                </g>
-              </svg>
-              YOUTUBE
-            </a>
-            <a href="https://podcasts.apple.com/us/podcast/the-jeff-gerstmann-show-a-podcast-about-video-games/id1628348754">
-              <?xml version="1.0" standalone="no"?>
-              <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 20010904//EN" "http://www.w3.org/TR/2001/REC-SVG-20010904/DTD/svg10.dtd">
-              <svg
-                class="mb-1"
-                version="1.0"
-                xmlns="http://www.w3.org/2000/svg"
-                width="40"
-                height="40"
-                viewBox="0 0 281.000000 281.000000"
-                preserveAspectRatio="xMidYMid meet"
-              >
-                <g
-                  transform="translate(0.000000,281.000000) scale(0.100000,-0.100000)"
-                  fill="#000000"
-                  stroke="none"
-                >
-                  <path
-                    d="M490 2794 c-232 -49 -426 -246 -475 -479 -22 -104 -22 -1716 0 -1820
+               291 -163 634 -358z" />
+              </g>
+            </svg>
+            YOUTUBE
+          </a>
+          <a
+            href="https://podcasts.apple.com/us/podcast/the-jeff-gerstmann-show-a-podcast-about-video-games/id1628348754">
+            <?xml version="1.0" standalone="no"?>
+            <!DOCTYPE svg
+              PUBLIC "-//W3C//DTD SVG 20010904//EN" "http://www.w3.org/TR/2001/REC-SVG-20010904/DTD/svg10.dtd">
+            <svg class="mb-1" version="1.0" xmlns="http://www.w3.org/2000/svg" width="40" height="40"
+              viewBox="0 0 281.000000 281.000000" preserveAspectRatio="xMidYMid meet">
+              <g transform="translate(0.000000,281.000000) scale(0.100000,-0.100000)" fill="#000000" stroke="none">
+                <path d="M490 2794 c-232 -49 -426 -246 -475 -479 -22 -104 -22 -1716 0 -1820
               49 -236 244 -431 480 -480 104 -22 1716 -22 1820 0 236 49 431 244 480 480 22
               104 22 1716 0 1820 -49 236 -244 431 -480 480 -101 21 -1726 21 -1825 -1z
               m1139 -314 c312 -76 587 -328 691 -633 45 -133 53 -189 48 -363 -4 -140 -8
@@ -209,31 +150,19 @@ layout: default
               -303 237 -158 382 56 56 92 69 178 64 50 -3 72 -10 104 -33z m6 -539 c83 -35
               111 -86 111 -206 0 -153 -56 -562 -84 -616 -45 -87 -152 -117 -246 -69 -72 36
               -91 93 -130 398 -26 212 -28 364 -5 414 20 41 81 81 146 95 56 11 161 4 208
-              -16z"
-                  />
-                </g>
-              </svg>
-              APPLE PODCAST
-            </a>
-            <a href="https://feeds.simplecast.com/hkXlCKma">
-              <?xml version="1.0" standalone="no"?>
-              <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 20010904//EN" "http://www.w3.org/TR/2001/REC-SVG-20010904/DTD/svg10.dtd">
-              <svg
-                class="mb-1"
-                version="1.0"
-                xmlns="http://www.w3.org/2000/svg"
-                width="40"
-                height="40"
-                viewBox="0 0 229.000000 300.000000"
-                preserveAspectRatio="xMidYMid meet"
-              >
-                <g
-                  transform="translate(0.000000,300.000000) scale(0.100000,-0.100000)"
-                  fill="#000000"
-                  stroke="none"
-                >
-                  <path
-                    d="M1005 2839 c-124 -18 -262 -72 -365 -142 -68 -47 -197 -175 -246
+              -16z" />
+              </g>
+            </svg>
+            APPLE PODCAST
+          </a>
+          <a href="https://feeds.simplecast.com/hkXlCKma">
+            <?xml version="1.0" standalone="no"?>
+            <!DOCTYPE svg
+              PUBLIC "-//W3C//DTD SVG 20010904//EN" "http://www.w3.org/TR/2001/REC-SVG-20010904/DTD/svg10.dtd">
+            <svg class="mb-1" version="1.0" xmlns="http://www.w3.org/2000/svg" width="40" height="40"
+              viewBox="0 0 229.000000 300.000000" preserveAspectRatio="xMidYMid meet">
+              <g transform="translate(0.000000,300.000000) scale(0.100000,-0.100000)" fill="#000000" stroke="none">
+                <path d="M1005 2839 c-124 -18 -262 -72 -365 -142 -68 -47 -197 -175 -246
               -244 -55 -76 -107 -187 -132 -282 -16 -60 -28 -82 -65 -120 -68 -70 -77 -110
               -77 -330 0 -175 2 -189 24 -237 28 -60 80 -115 139 -146 34 -18 59 -23 127
               -23 47 0 93 3 103 7 16 7 17 36 17 408 l0 400 -26 10 c-14 6 -48 10 -75 10
@@ -241,48 +170,32 @@ layout: default
               355 78 338 -2 583 -162 731 -478 22 -46 39 -88 39 -94 0 -7 -20 -11 -49 -11
               -27 0 -61 -4 -75 -10 l-26 -10 0 -399 c0 -293 3 -402 12 -407 6 -4 43 -9 82
               -12 94 -5 165 21 229 85 78 78 89 120 85 347 -3 215 -11 242 -85 321 -28 30
-              -43 60 -60 120 -48 164 -130 295 -264 419 -206 191 -482 276 -764 235z"
-                  />
-                  <path
-                    d="M1047 2130 c-93 -17 -182 -90 -205 -168 -16 -51 -16 -858 -1 -918 14
+              -43 60 -60 120 -48 164 -130 295 -264 419 -206 191 -482 276 -764 235z" />
+                <path d="M1047 2130 c-93 -17 -182 -90 -205 -168 -16 -51 -16 -858 -1 -918 14
               -56 75 -125 137 -156 41 -20 61 -23 167 -23 103 0 127 4 170 23 75 34 118 81
               139 150 7 22 7 22 -108 22 l-116 0 0 40 0 40 115 0 115 0 0 40 0 40 -115 0
               -115 0 0 40 0 40 115 0 115 0 0 40 0 40 -115 0 -115 0 0 40 0 40 115 0 115 0
               0 40 0 40 -115 0 -115 0 0 35 0 35 115 0 115 0 0 45 0 45 -115 0 -115 0 0 35
               0 35 115 0 115 0 0 40 0 40 -115 0 -115 0 0 40 0 40 116 0 c115 0 115 0 108
-              23 -25 82 -74 134 -155 162 -53 19 -186 27 -252 15z"
-                  />
-                  <path
-                    d="M553 1364 c-10 -28 5 -307 21 -371 54 -216 194 -349 411 -391 l85
+              23 -25 82 -74 134 -155 162 -53 19 -186 27 -252 15z" />
+                <path d="M553 1364 c-10 -28 5 -307 21 -371 54 -216 194 -349 411 -391 l85
               -16 0 -133 0 -133 -167 -2 -168 -3 -3 -77 -3 -78 416 0 415 0 0 74 0 74 -31 6
               c-17 3 -92 6 -165 6 l-134 0 0 133 0 132 86 18 c218 45 349 169 405 384 22 84
               36 295 25 356 l-7 37 -77 0 -77 0 3 -113 c9 -256 -64 -422 -213 -488 -119 -52
               -354 -47 -471 11 -135 66 -194 205 -194 457 l0 133 -75 0 c-60 0 -77 -3 -82
-              -16z"
-                  />
-                </g>
-              </svg>
-              PODCAST FEED
-            </a>
-            <a href="https://www.twitch.tv/jeffgerstmann">
-              <?xml version="1.0" standalone="no"?>
-              <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 20010904//EN" "http://www.w3.org/TR/2001/REC-SVG-20010904/DTD/svg10.dtd">
-              <svg
-                class="mb-1"
-                version="1.0"
-                xmlns="http://www.w3.org/2000/svg"
-                width="40"
-                height="40"
-                viewBox="0 0 980.000000 819.000000"
-                preserveAspectRatio="xMidYMid meet"
-              >
-                <g
-                  transform="translate(0.000000,819.000000) scale(0.100000,-0.100000)"
-                  fill="#000000"
-                  stroke="none"
-                >
-                  <path
-                    d="M6643 8170 c-388 -49 -827 -230 -1113 -459 -399 -318 -644 -766 -715
+              -16z" />
+              </g>
+            </svg>
+            PODCAST FEED
+          </a>
+          <a href="https://www.twitch.tv/jeffgerstmann">
+            <?xml version="1.0" standalone="no"?>
+            <!DOCTYPE svg
+              PUBLIC "-//W3C//DTD SVG 20010904//EN" "http://www.w3.org/TR/2001/REC-SVG-20010904/DTD/svg10.dtd">
+            <svg class="mb-1" version="1.0" xmlns="http://www.w3.org/2000/svg" width="40" height="40"
+              viewBox="0 0 980.000000 819.000000" preserveAspectRatio="xMidYMid meet">
+              <g transform="translate(0.000000,819.000000) scale(0.100000,-0.100000)" fill="#000000" stroke="none">
+                <path d="M6643 8170 c-388 -49 -827 -230 -1113 -459 -399 -318 -644 -766 -715
               -1306 -26 -194 -20 -590 11 -737 l6 -28 -85 0 c-167 0 -522 37 -774 81 -455
               79 -1013 286 -1473 547 -462 262 -829 523 -1190 849 -156 141 -480 465 -579
               581 -30 34 -57 62 -62 62 -20 0 -152 -386 -199 -583 -71 -293 -79 -595 -24
@@ -300,27 +213,24 @@ layout: default
               122 257 192 168 158 316 358 426 574 61 117 152 341 143 349 -3 3 -31 -11 -63
               -30 -184 -110 -439 -235 -601 -294 -114 -41 -365 -104 -515 -129 l-107 -18
               -113 110 c-126 125 -179 169 -287 241 -207 137 -436 232 -680 278 -100 20
-              -382 28 -487 15z"
-                  />
-                </g>
-              </svg>
-              TWITTER
-            </a>
-          </div>
-        </div>
-        <div class="status-bar">
-          <p class="status-bar-field">Subscribe on Patreon</p>
-          <p class="status-bar-field"></p>
-          <p class="status-bar-field">CPU Usage: 98%</p>
+              -382 28 -487 15z" />
+              </g>
+            </svg>
+            TWITTER
+          </a>
         </div>
       </div>
+      <div class="status-bar">
+        <p class="status-bar-field">Subscribe on Patreon</p>
+        <p class="status-bar-field"></p>
+        <p class="status-bar-field">CPU Usage: 98%</p>
+      </div>
+    </div>
 
-      <a href="https://www.hitwebcounter.com" target="_blank" class="pt-10">
-        <img
-          src="https://hitwebcounter.com/counter/counter.php?page=7999987&style=0023&nbdigits=7&type=page&initCount=0"
-          title="Free Counter"
-          alt="web counter"
-      /></a>
-    </header>
-  </main>
+    <a href="https://www.hitwebcounter.com" target="_blank" class="pt-10">
+      <img src="https://hitwebcounter.com/counter/counter.php?page=7999987&style=0023&nbdigits=7&type=page&initCount=0"
+        title="Free Counter" alt="web counter" /></a>
+  </header>
+</main>
+
 </html>
