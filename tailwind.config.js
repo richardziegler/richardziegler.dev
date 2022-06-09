@@ -5,6 +5,9 @@ module.exports = {
       '1/5': '20%'
     },
     extend: {
+      cursor: {
+        'fancy': 'url(hand.cur), pointer',
+      },
       fontFamily: {
         'press-start': ['"Press Start 2P"', 'cursive']
       },
