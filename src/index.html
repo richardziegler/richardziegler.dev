@@ -25,8 +25,8 @@ layout: default
 <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet" />
 <link rel="stylesheet" href="https://unpkg.com/98.css" />
 <html class="bg-[#008080] overflow-scroll">
-<main class="container mx-auto flex flex-col flex-wrap items-center h-svh p-6 pt-24 md:flex-row md:pt-48 overflow-scroll">
-  <header class="flex w-full flex-col justify-center overflow-y-hidden lg:items-start xl:w-4/5">
+<main class="container flex flex-col flex-wrap h-lvh w-lvw p-6 pt-24 md:flex-row md:pt-40 md:pl-14 overflow-scroll">
+  <header class="">
     <h1 class="text-center text-2xl font-bold leading-tight md:text-left md:text-2xl font-press-start text-white">
       Richard Ziegler
     </h1>
@@ -34,25 +34,6 @@ layout: default
       class="mb-8 mt-1 text-center text-lg font-bold leading-tight md:text-left md:text-xl font-press-start text-gray-300">
       Software Engineer in St. Louis
     </h1>
-    <div class="flex flex-row justify-between w-5/6">
-      <div class="window" style="width: 400px" draggable="true" id="dragme">
-        <div class="title-bar">
-          <div class="title-bar-text">About Me</div>
-          <div class="title-bar-controls">
-            <button aria-label="Minimize"></button>
-            <button aria-label="Maximize"></button>
-            <button aria-label="Close"></button>
-          </div>
-        </div>
-        <div class="window-body">
-          <ul class="mb-6 text-center text-base leading-normal md:text-left md:text-xl text-black space-y-2">
-            <li>Hi! Welcome to my website!</li>
-            <li class="text-base"></li>
-          </ul>
-        </div>
-      </div>
-
-    </div>
 
     <!-- <h2
       class="my-4 text-center text-2xl font-bold leading-tight md:text-left md:text-3xl font-press-start uppercase text-white">
@@ -87,20 +68,28 @@ layout: default
       </div>
     </div>
   </header>
-  <br />
-  <br />
-  <br />
-  <br />
-  <br />
-  <br />
-  <br />
-  <br />
-  <br />
-  <br />
-  <br />
-  <br />
-  <br />
-  <br />
+  <div class="flex flex-row justify-between w-5/6">
+    <div class="window" style="width: 400px" draggable="true" id="dragme">
+      <div class="title-bar">
+        <div class="title-bar-text">About Me</div>
+        <div class="title-bar-controls">
+          <button aria-label="Minimize"></button>
+          <button aria-label="Maximize"></button>
+          <button aria-label="Close"></button>
+        </div>
+      </div>
+      <div class="window-body">
+        <ul class="mb-6 text-center text-base leading-normal md:text-left md:text-xl text-black space-y-2 font-sans">
+          <li>Hi! Welcome to my website!</li>
+          <li class="text-base">Hey there! I’m a software engineer who loves building cool, scalable web apps. I’ve been doing this for over 6 years, mostly with React, Node.js, AWS, and some other fun tools like TypeScript and Docker.
+
+            One of my favorite gigs was working with AWS on IoT Sitewise—getting to streamline industrial data workflows was pretty awesome. These days, I’m geeking out over Rust and seeing how far I can push performance.
+            
+            When I’m not glued to my keyboard, I’m probably digging into new tech, helping other devs level up, or dreaming up my next side project. Let’s connect or chat—always happy to swap ideas or just nerd out!</li>
+        </ul>
+      </div>
+    </div>
+  </div>
 </main>
 
 </html>
