@@ -1,17 +1,19 @@
 ---
 layout: default
 ---
-
-
 <!DOCTYPE html>
-<html class="bg-[#008080] overflow-scroll">
+<html class="bg-[#008080]">
 
 <head>
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <style type="text/css">
+    body {
+      -webkit-font-smoothing: none;
+      -moz-osx-font-smoothing: grayscale;
+    }
 
     @media screen and (min-width: 441px) {
-    #dragme {
+      #dragme {
         position: absolute;
         left: 6.234%;
         top: 37.22348%;
@@ -19,7 +21,7 @@ layout: default
     }
 
     @media screen and (min-width: 441px) {
-    #dragme-links {
+      #dragme-links {
         position: absolute;
         left: 57.2394872934%;
         top: 43.3847767%;
@@ -35,17 +37,18 @@ layout: default
 </head>
 
 
-<main class="container flex flex-col flex-wrap content-center md:content-normal h-lvh w-lvw p-6 pt-24 md:flex-row md:pt-40 md:pl-14 overflow-scroll">
+<main class="container flex flex-col flex-wrap content-center md:content-normal h-svh w-lvw pt-24 md:flex-row md:pt-40">
   <header>
-    <h1 class="text-center text-2xl font-bold leading-tight md:text-left md:text-2xl font-press-start text-white">
+    <h1
+      class="text-center pl-6 md:pl-14 text-2xl font-bold leading-tight md:text-left md:text-2xl font-press-start text-white">
       Richard Ziegler
     </h1>
     <h1
-      class="mb-8 mt-1 text-center text-lg font-bold leading-tight md:text-left md:text-xl font-press-start text-gray-300">
+      class="mb-8 pl-6 md:pl-14 mt-1 text-center text-lg font-bold leading-tight md:text-left md:text-xl font-press-start text-gray-300">
       Software Engineer in St. Louis
     </h1>
 
-    <div class="window w-[400px] mb-3 md:w-[600px]" draggable="true" id="dragme">
+    <div class="window w-[400px] mb-3 ml-2 md:w-[600px]" draggable="true" id="dragme">
       <div class="title-bar">
         <div class="title-bar-text">About Me</div>
         <div class="title-bar-controls">
@@ -59,10 +62,15 @@ layout: default
           <li>Hi! Welcome to my world wide webpage!</li>
           <li class="text-base">
             <p class="mb-4">
-              I’m Richard, a software engineer with a passion for crafting scalable, user-focused web applications. Over the past six years, I’ve worked on everything from designing complex UI components to building backend systems, mostly with React, Node.js, and AWS. I love tackling technical challenges and finding creative solutions that make a real impact.
+              I’m Richard, a software engineer with a passion for crafting scalable, user-focused web applications. Over
+              the past six years, I’ve worked on everything from designing complex UI components to building backend
+              systems, mostly with React, Node.js, and AWS. I love tackling technical challenges and finding creative
+              solutions that make a real impact.
             </p>
             <p>
-              Outside of coding, I’m a gamer, fantasy book lover, and music enthusiast. When I’m not experimenting with new tech or building personal projects, I’m probably diving into a new (or old!) JRPG while hanging out with my girlfriend and our dog.
+              Outside of coding, I’m a gamer, fantasy book lover, and music enthusiast. When I’m not experimenting with
+              new tech or building personal projects, I’m probably diving into a new (or old!) JRPG and hanging out
+              with my dog.
             </p>
           </li>
         </ul>
@@ -100,10 +108,16 @@ layout: default
         </div>
       </div>
     </div>
-
-
   </header>
 
+  <div id="start-bar">
+    <div id="start-button-items">
+      <label id="start-button" class="windows-box-shadow" for="start-button-input"></label>
+    </div>
+    <div id="start-menu" class="windows-box-shadow">
+    </div>
+    <div id="time-options"></div>
+  </div>
 </main>
 
 </html>
@@ -114,7 +128,7 @@ layout: default
     event.dataTransfer.setData("text",
       (parseInt(style.getPropertyValue("left"), 10) - event.clientX) + ',' + (parseInt(style.getPropertyValue("top"), 10) - event.clientY));
 
-      event.dataTransfer.setData("id", event.target.id)
+    event.dataTransfer.setData("id", event.target.id)
   }
 
   function drag_over(event) {
@@ -126,7 +140,7 @@ layout: default
     event.preventDefault();
     var offset = event.dataTransfer.getData("text").split(',');
     var parent = event.dataTransfer.getData("id");
-    
+
     if (parent === "dragme-links") {
       var dragMeLinks = document.getElementById('dragme-links');
       dragMeLinks.style.left = (event.clientX + parseInt(offset[0], 10)) + 'px';
@@ -142,9 +156,14 @@ layout: default
     return false;
   }
 
+  var date = new Date()
+    .toLocaleTimeString([], { hour: "2-digit", minute: "2-digit" })
+  var time = document.getElementById('time-options');
+  time.textContent = date;
+
   var dm = document.getElementById('dragme');
   var dragMeLinks = document.getElementById('dragme-links');
-  
+
   dm.addEventListener('dragstart', drag_start, false);
   dragMeLinks.addEventListener('dragstart', drag_start, false);
 

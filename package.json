@@ -1,7 +1,7 @@
 {
-  "name": "jg-landing",
+  "name": "richardziegler.dev",
   "version": "1.0.0",
-  "description": "Simple 11ty template with tailwind",
+  "description": "Richard Ziegler's Personal Webpage",
   "scripts": {
     "start": "run-p start:*",
     "start:eleventy": "eleventy --serve",
