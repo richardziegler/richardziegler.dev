@@ -4,10 +4,14 @@
 
 @tailwind utilities;
 
+html, body {
+    overflow-x: hidden;
+  }
+
 #start-bar {
     background: #c0c0c0;
     height: 2.5rem;
-    position: absolute;
+    position: fixed;
     bottom: 0;
     width: calc(100%);
     display: flex;
